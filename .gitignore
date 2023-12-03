@@ -1,3 +1,4 @@
 .git
 readme_counter.py
 *.out
+.vscode
