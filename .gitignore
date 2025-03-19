@@ -2,3 +2,7 @@
 readme_counter.py
 *.out
 .vscode
+**/.idea/
+**/resources/
+**/lib/
+**/out/
