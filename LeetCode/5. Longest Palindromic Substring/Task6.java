@@ -24,7 +24,6 @@ class Task6 {
         //Rec call
         for (int c = 2; c < s.length(); c++) {
             for (int r = 0; r < s.length() - c; r++) {
-//                System.out.println(String.valueOf(r) + " - " + String.valueOf(c + r));
                 int y = c + r;
                 if (sArr[r] == sArr[y] && dp[r + 1][y - 1]) {
                     dp[r][y] = true;
@@ -32,14 +31,6 @@ class Task6 {
                 }
             }
         }
-//        System.out.println();
-//        for (int r = 0; r < s.length(); r++) {
-//            for (int c = 0; c < s.length(); c++) {
-//                System.out.print(dp[r][c] ? "1 " : "0 ");
-//            }
-//            System.out.println();
-//        }
-
         return maxPal;
     }
 
@@ -47,17 +38,5 @@ class Task6 {
         Task6 r = new Task6();
         System.out.println(r.longestPalindrome("babad"));
         System.out.println(r.longestPalindrome("baab"));
-//        System.out.println("0123456".substring(3,5));
     }
 }
-
-/*
-babad
-12345
-  0 1 2 3 4
-0 1 0 1 0 0
-1   1 0 1 0
-2     1 0 0
-3       1 0
-4         1
- */

@@ -1,6 +1,6 @@
-# LeetCode Problem Solving Stats
+# Coding Problems Solving Stats
 
-This repository contains my solutions to LeetCode problems, categorized by programming language.
+This repository contains my solutions to various coding problems, categorized by programming language.
 
 | Language | Count |
 |----------|-------|
