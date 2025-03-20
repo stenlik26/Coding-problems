@@ -8,5 +8,5 @@ This repository contains my solutions to LeetCode problems, categorized by progr
 | Python | 25 |
 | C# | 3 |
 | SQL | 7 |
-| Java | 1 |
-| **Total** | **279** |
+| Java | 2 |
+| **Total** | **280** |
