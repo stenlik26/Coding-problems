@@ -8,5 +8,5 @@ This repository contains my solutions to various coding problems, categorized by
 | Python | 25 |
 | C# | 3 |
 | SQL | 7 |
-| Java | 2 |
-| **Total** | **280** |
+| Java | 3 |
+| **Total** | **281** |
