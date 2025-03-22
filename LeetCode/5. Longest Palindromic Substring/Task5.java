@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Task6 {
+class Task5 {
     public String longestPalindrome(String s) {
         boolean[][] dp = new boolean[s.length()][s.length()];
         char[] sArr = s.toCharArray();
@@ -35,7 +35,7 @@ class Task6 {
     }
 
     public static void main(String[] args) {
-        Task6 r = new Task6();
+        Task5 r = new Task5();
         System.out.println(r.longestPalindrome("babad"));
         System.out.println(r.longestPalindrome("baab"));
     }
