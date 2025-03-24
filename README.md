@@ -6,7 +6,7 @@ This repository contains my solutions to various coding problems, categorized by
 |----------|-------|
 | C++ | 243 |
 | Python | 25 |
-| C# | 3 |
+| Java | 6 |
 | SQL | 7 |
-| Java | 5 |
-| **Total** | **283** |
+| C# | 3 |
+| **Total** | **284** |
