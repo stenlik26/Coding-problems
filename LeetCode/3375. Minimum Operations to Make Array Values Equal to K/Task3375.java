@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 class Task3375{
 
 	public int minOperations(int[] nums, int k) {
@@ -21,9 +24,10 @@ class Task3375{
     }
 	
 	public static void main(String[] args){
-		System.out.println(minOperations(new int[]{5,2,5,4,5}, 2); //2
-		System.out.println(minOperations(new int[]{2,1,2}, 2);     //-1
-		System.out.println(minOperations(new int[]{9,7,5,3}, 1);   //1
+        Task3375 x = new Task3375();
+		System.out.println(x.minOperations(new int[]{5,2,5,4,5}, 2)); //2
+		System.out.println(x.minOperations(new int[]{2,1,2}, 2));     //-1
+		System.out.println(x.minOperations(new int[]{9,7,5,3}, 1));   //1
 	}
 
 }
