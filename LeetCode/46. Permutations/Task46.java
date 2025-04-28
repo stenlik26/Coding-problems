@@ -6,29 +6,36 @@ import java.util.List;
 
 class Task46 {
 
-    public int fact(int x) {
-        if (x == 1) {
-            return 1;
+    void recurPermute(int idx, List<Integer> arr, List<List<Integer>> res) {
+        if (idx == arr.size()) {
+            res.add(new ArrayList<>(arr));
         }
-        return x * fact(x - 1);
+
+        for (int i = idx; i < arr.size(); i++) {
+            Integer t = arr.get(idx);
+            arr.set(idx, arr.get(i));
+            arr.set(i, t);
+
+            recurPermute(idx + 1, arr, res);
+
+            t = arr.get(idx);
+            arr.set(idx, arr.get(i));
+            arr.set(i, t);
+        }
     }
 
     public List<List<Integer>> permute(int[] nums) {
-        Deque<Integer> current = new ArrayDeque<>();
-        Arrays.stream(nums).forEach(current::add);
-
-        List<List<Integer>> result = new ArrayList<>();
-        int n = fact(nums.length);
-
-        for (int i = 0; i < n; i++){
-            result.add(current.stream().toList());
-            Integer x = current.pollFirst();
-            current.addLast(x);
-        }
-        return result;
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> numsList = new ArrayList<>();
+        Arrays.stream(nums).forEach(numsList::add);
+        recurPermute(0, numsList, res);
+        return res;
     }
 
     public static void main(String[] args) {
+        Task46 h = new Task46();
+        var res = h.permute(new int[]{1,2,3});
 
+        System.out.println(res);
     }
 }
