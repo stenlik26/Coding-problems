@@ -5,8 +5,8 @@ This repository contains my solutions to various coding problems, categorized by
 | Language | Count |
 |----------|-------|
 | C++ | 243 |
-| Java | 35 |
+| Java | 38 |
 | Python | 25 |
 | SQL | 7 |
 | C# | 3 |
-| **Total** | **313** |
+| **Total** | **316** |
